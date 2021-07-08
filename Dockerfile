@@ -6,7 +6,7 @@ ENV PYTHONPATH "$PYTHONPATH:/github/action"
 
 RUN pwd
 
-RUN PYTHONPATH
+RUN env
 
 RUN ls -al
 # ENTRYPOINT ["python", "-m", "action"]
