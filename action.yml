@@ -10,4 +10,4 @@ description: 'Greet someone and record the time'
 #     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  main: 'dockerfile'
+  main: 'Dockerfile'
