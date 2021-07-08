@@ -7,4 +7,5 @@ inputs:
     default: './dangerfile.js'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://python:3.7.11-alpine3.14'
+  entrypoint: ["python", "-V"] 
