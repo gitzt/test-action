@@ -10,4 +10,4 @@ RUN env
 
 RUN ls -al
 
-ENTRYPOINT ["pthon", "-m", "action"]
+ENTRYPOINT ["python", "-m", "action"]
