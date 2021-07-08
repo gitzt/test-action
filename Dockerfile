@@ -1,13 +1,5 @@
 From python:3.7.11-alpine3.14
 
-COPY action /action
+COPY run.py ./run.py
 
-ENV PYTHONPATH "${PYTONPATH}:/action"
-
-RUN pwd
-
-RUN env
-
-RUN ls -al
-
-ENTRYPOINT ["python", "-m", "/action"]
+ENTRYPOINT ["python", "run.py"]
