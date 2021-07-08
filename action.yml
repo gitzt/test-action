@@ -1,10 +1,13 @@
 name: 'danger-js'
 description: 'running danger in action'
 inputs:
-  dangerfile:  # id of input
-    description: 'dangerfile directory'
+  in:  # id of input
+    description: 'input something'
     required: false
-    default: './dangerfile.js'
+    default: 'input param'
+outputs:
+  out:
+    description: 'output param'
 runs:
   using: 'docker'
-  image: 'docker://python:3.7.11-alpine3.14'
+  image: 'Dockerfile'
