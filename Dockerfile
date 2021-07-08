@@ -4,4 +4,9 @@ COPY action /github/action
 
 ENV PYTHONPATH "$PYTHONPATH:/github/action"
 
-ENTRYPOINT ["python", "-m", "action"]
+RUN pwd
+
+RUN PYTHONPATH
+
+RUN ls -al
+# ENTRYPOINT ["python", "-m", "action"]
