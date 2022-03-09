@@ -20,5 +20,8 @@ jobs:
 #       - name: Get the output time
 #         run: echo "The time was ${{ steps.hello.outputs.time }}"
 
-      - name: Docker
-        uses: ./
+#       - name: Using locally action
+#         uses: ./
+        
+      - name: Using wrapped action
+        uses: gitzt/wrap-actions@main
