@@ -24,4 +24,5 @@ jobs:
 #         uses: ./
         
       - name: Using wrapped action
-        uses: gitzt/wrap-actions@main
+        uses: docker://hello-world:latest
+#         uses: gitzt/wrap-actions@main
