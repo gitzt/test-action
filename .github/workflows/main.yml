@@ -23,6 +23,12 @@ jobs:
 #       - name: Using locally action
 #         uses: ./
         
+      - name: Script
+        run: |
+          pwd
+          cd
+          pwd
+        
       - name: Using wrapped action
         uses: docker://hello-world:latest
 #         uses: gitzt/wrap-actions@main
