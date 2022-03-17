@@ -28,6 +28,7 @@ jobs:
           pwd
           cd
           pwd
+          ls -al
         
       - name: Using wrapped action
         uses: docker://hello-world:latest
