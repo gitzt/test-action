@@ -28,7 +28,7 @@ jobs:
 
 #       - name: Using locally action
 #         uses: ./
-        
+
       - name: Script
         run: |
           pwd
