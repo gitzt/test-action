@@ -3,6 +3,7 @@ name: Check
 on:
   workflow_run:
     workflows: ["Main"]
+    branches: [test-check-workflow]
     types:
       - completed
       
@@ -11,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - run: echo "hello check"
+      - run: echo "hello check test"
