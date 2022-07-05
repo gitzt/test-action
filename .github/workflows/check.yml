@@ -1,0 +1,14 @@
+name: check
+
+on:
+  workflow_run:
+    workflows: ["Main"]
+    types:
+      - completed
+      
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - run: echo "hello check"
