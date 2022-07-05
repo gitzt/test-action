@@ -3,6 +3,7 @@ name: Check
 on:
   workflow_run:
     workflows: ["Main"]
+    branches: [test-check-workflow]
     types:
       - completed
       
